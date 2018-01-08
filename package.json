@@ -17,7 +17,7 @@
     "stylelint:fix": "npm run stylelint:css --fix && npm run stylelint:scss --fix",
     "stylelint:css": "./node_modules/stylelint/bin/stylelint.js src/css/**/*.css",
     "stylelint:scss": "./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
-    "precommit": "lint-staged"
+    "prepush": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.{js,json,css,scss,md}": [
