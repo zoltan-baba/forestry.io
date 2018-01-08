@@ -85,5 +85,11 @@
     "webpack-stream": "^4.0.0",
     "whatwg-fetch": "^1.0.0",
     "worker-loader": "^1.1.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "gulp-fn": "^0.0.0",
+    "jsdom": "^11.5.1",
+    "yoastseo": "^1.28.0"
   }
 }

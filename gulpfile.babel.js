@@ -2,11 +2,13 @@ import algoliasearch from "algoliasearch"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
 import del from "del"
+import fn from "gulp-fn"
 import fs from "fs"
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
 import hugo from "hugo-bin"
 import imagemin from "gulp-imagemin"
+import {JSDOM} from "jsdom"
 import named from "vinyl-named"
 import newer from "gulp-newer"
 import {dirname, basename} from "path"
@@ -138,6 +140,7 @@ gulp.task("styles:production", cb => {
       })
     )
     .pipe(gulp.dest(gulpConfig.styles.dest))
+    .pipe(fn(() => { browserSync.notify("Finished styles:production") }))
 
   if (isProduction) {
     task.pipe(browserSync.stream())
@@ -168,6 +171,7 @@ gulp.task("styles:development", cb => {
     )
     .pipe(gulp.dest(gulpConfig.styles.tmp))
     .pipe(browserSync.stream())
+    .pipe(fn(() => { browserSync.notify("Finished styles:development") }))
 })
 
 /**
@@ -201,6 +205,7 @@ gulp.task("scripts:production", cb => {
       })
     )
     .pipe(gulp.dest(gulpConfig.scripts.dest))
+    .pipe(fn(() => { browserSync.notify("Finished scripts:production") }))
 
   if (isProduction) {
     task.pipe(browserSync.stream())
@@ -235,6 +240,7 @@ gulp.task("scripts:development", cb => {
     )
     .pipe(gulp.dest(gulpConfig.scripts.tmp))
     .pipe(browserSync.stream())
+    .pipe(fn(() => { browserSync.notify("Finished scripts:development") }))
 })
 
 /**
@@ -249,6 +255,7 @@ gulp.task("images", () => {
     .pipe(imagemin([], {verbose: isProduction ? true : false}))
     .pipe(gulp.dest(gulpConfig.images.dest))
     .pipe(browserSync.stream())
+    .pipe(fn(() => { browserSync.notify("Finished images") }))
 })
 
 /**
@@ -267,6 +274,7 @@ gulp.task("svg", () => {
     )
     .pipe(gulp.dest(gulpConfig.svg.dest))
     .pipe(browserSync.stream())
+    .pipe(fn(() => { browserSync.notify("Finished svg") }))
 })
 
 /**

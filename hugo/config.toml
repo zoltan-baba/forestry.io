@@ -2,7 +2,7 @@ baseurl = "https://forestry.io"
 copyright = ""
 defaultContentLanguage = "en"
 destination = "../dist/"
-enableEmoji = true
+
 enableRobotsTXT = true
 languageCode = "en"
 metaDataFormat = "yaml"

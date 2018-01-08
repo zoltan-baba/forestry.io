@@ -1,0 +1,104 @@
+#seo-wrapper {
+    background-color: $color-white;
+    display: flex;
+    padding: 2rem 1rem;
+    position: absolute;
+    transition: transform 0.5s ease;
+    transform: translateY(-100%);
+    z-index: 9999;
+
+    &:before {
+        background-color: $color-white;
+        border: 1px solid $color-light-grey;
+        border-radius: 0;
+        content: "Audit SEO";
+        display: block;
+        height: 1rem;
+        padding: 1rem;
+        position: fixed;
+        right: 50%;
+        bottom: 0;
+        transform: translateY(100%)
+    }
+
+    &:hover {
+        transform: translateY(0%)
+    }
+
+    .screen-reader-text {
+        display: inline-block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+
+#seo-wrapper div {
+    flex: 0 0 50%;
+    padding: 0 1rem;
+    position: relative;
+}
+
+#seo-wrapper #snippet-preview-view {
+    padding: 0;
+
+    .snippet_container {
+        display: block;
+        width: 100%;
+        border-radius: 1rem;
+        border: 1px solid $color-grey;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+#seo-wrapper .snippet-editor__form {
+    display: flex;
+    flex-direction: column;
+    background: $color-wjite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4rem 0;
+
+    &.snippet-editor--hidden {
+        display: none;
+    }
+
+    label {
+        margin-top: 1rem;
+    }
+}
+
+#seo-wrapper .score {
+    display: flex;
+
+    .wpseo-score-icon {
+        background-color: gray;
+        border-radius: 100%;
+        display: inline-block;
+        flex: 0 0 16px;
+        margin-right: 1rem;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-top;
+    }
+
+    .wpseo-score-icon.bad {
+        background-color: maroon;
+    }
+
+    .wpseo-score-icon.ok {
+        background-color: goldenrod;
+    }
+
+    .wpseo-score-icon.good {
+        background-color: green;
+    }
+
+    .wpseo-score-text {
+        font-size: 0.85rem;
+    }
+}
