@@ -23,7 +23,10 @@
     "src/**/*.{js,json,css,md}": [
       "prettier --write",
       "git add"
-    ]
+    ],
+    "src/**/*.js": "eslint",
+    "src/**/*.{css}": "stylelint:css",
+    "src/**/*.{scss}": "stylelint:scss"
   },
   "devDependencies": {
     "algoliasearch": "^3.24.8",
