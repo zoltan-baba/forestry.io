@@ -17,7 +17,7 @@ functions:
   main:
     handler: functions/basic
     events:
-      - schedule: rate(1 minute)
+      - schedule: rate(1 day)
   webhook:
     handler: functions/webhook
 
