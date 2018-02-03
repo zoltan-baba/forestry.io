@@ -85,7 +85,7 @@ gulp.task("algolia", cb => {
       through.obj({objectMode: true}, (file, enc, done) => {
         const indexName = basename(dirname(file.path))
 
-        atomicalgolia(indexName, file.path, function(err, res) {
+        atomicalgolia(indexName, file.path, {}, function(err, res) {
           if (err) throw err
 
           var count = res.objectIDs.length
