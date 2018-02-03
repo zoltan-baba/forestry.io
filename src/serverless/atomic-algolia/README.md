@@ -22,12 +22,12 @@ This function needs the following to be configured:
 To create your `.env` file, run:
 
 ```
-cp .env.stub .env
+cp ./config/.env.stub ./config/.env
 ```
 
-Then open up `.env` and provide the values for `ALGOLIA_APP_ID` and `ALGOLIA_ADMIN_KEY` from your Algolia account.
+Then open up `config/.env` and provide the values for `ALGOLIA_APP_ID` and `ALGOLIA_ADMIN_KEY` from your Algolia account.
 
-Next, open up `indexes.js` and update the example index with your actual Algolia index information. E.g,
+Next, open up `config/indexes.js` and update the example index with your actual Algolia index information. E.g,
 
 ```
 [
@@ -46,7 +46,7 @@ To deploy this function in development mode, run:
 serverless deploy
 ```
 
-To deploy this function to production, run:
+To deploy this function with production secrets, run:
 
 ```
 serverless deploy --stage prod --ALGOLIA_APP_ID=YOUR_APP_ID --ALGOLIA_ADMIN_KEY=YOUR_ADMIN_KEY
