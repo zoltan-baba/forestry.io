@@ -1,10 +1,6 @@
 ---
 pages:
-- faqs
-- git-sync
-- troubleshooting
-- changelog
-- welcome
+- terms.md
 hide_body: false
 fields:
 - type: text
