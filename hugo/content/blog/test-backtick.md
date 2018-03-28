@@ -21,6 +21,6 @@ menu: []
 draft: true
 
 ---
-\`\[\`
+`\[`
 
 fefefe fe fe f
