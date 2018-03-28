@@ -22,3 +22,5 @@ draft: true
 
 ---
 `[params.algolia]`
+
+"[params.algolia]"
