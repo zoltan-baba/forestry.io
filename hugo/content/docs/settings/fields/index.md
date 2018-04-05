@@ -216,3 +216,15 @@ authors:
 ```
 
 [See detailed documentation](/docs/settings/fields/repeatable-field-group)
+
+---
+
+## Sub Front Matter
+![](/uploads/2018/04/sub-front-matter-preview.png)
+
+Multiple fields included from different Front Matter Template. Field makes it possible to take a component-based approach to front matter templates and reuse them for other templates.
+```yaml
+
+```
+
+[See detailed documentation](/docs/settings/fields/sub-front-matter)
