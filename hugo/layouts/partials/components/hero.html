@@ -9,6 +9,7 @@
         <div class="hero-cta">
         {{- range .ctas -}}
           <a href="{{ .permalink }}"{{ if .button }} class="button primary big"{{ end }}>{{ .textline }}</a>
+          <span class="launch-demo">Launch demo</span>
         {{- end -}}
         </div>
       </div>
@@ -25,7 +26,7 @@
     {{- end -}}{{- end -}}
 
   </div>
-  
+
   {{- with .logos -}}
   <div class="built-for">
     <span>{{ .textline }}</span>
@@ -36,6 +37,6 @@
     </div>
   </div>
   {{- end -}}
-  
+
 </section>
 {{- end -}}
