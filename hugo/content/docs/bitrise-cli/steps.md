@@ -1,3 +1,10 @@
++++
+[menu.docs]
+name = "Steps"
+parent = "Bitrise CLI"
+weight = 2
+
++++
 ## What is a Step
 
 A Step encapsulates a "build task": the code to perform that task, the inputs/parameters
