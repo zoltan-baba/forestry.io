@@ -18,7 +18,7 @@ plainIDAnchors = true
 [[menu.docs]]
 name = "Bitrise CLI"
 url = "/"
-weight = 5
+weight = 6
 [[menu.docs]]
 name = "Welcome"
 weight = 1
@@ -26,7 +26,7 @@ weight = 1
 name = "Hosting"
 weight = 5
 [[menu.docs]]
-name = "Quick Start Guide"
+name = "iOS Code Signing"
 weight = 2
 [[menu.docs]]
 name = "Editing"
