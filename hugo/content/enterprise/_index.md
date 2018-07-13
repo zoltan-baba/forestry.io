@@ -1,45 +1,11 @@
 ---
-aliases:
-- "/remote/"
-title: Static CMS for Hugo & Jekyll
-description: Static CMS for Hugo & Jekyll sites, powered by Git. A better way to build
-  sites.
-authors:
-- forestryio
-blocks:
-- template: create-site-button-js
-  engine_name: jekyll
-  engine_version: 3.6.0
-  repo_name: https://github.com/forestryio-templates/belkirk-jekyll-demo.git
-  fork_name: forestry-demo
-  branch_name: master
-hero:
-  headline: A static CMS that **commits**
-  textline: Sync your Jekyll or Hugo site. Your editors will love it and won’t realize
-    they’re making commits.
-  ctas:
-  - permalink: https://app.forestry.io/signup
-    textline: Import Your Site Now
-    button: true
-  - permalink: "#/add-site"
-    textline: Launch Demo
-    button: false
-  video:
-    fallbackVisual: "/video/forestry_factory.jpg"
-    sources:
-    - permalink: "/video/forestry_factory.webm"
-      type: video/webm
-    - permalink: "/video/forestry_factory.mp4"
-      type: video/mp4
-    - permalink: "/video/forestry_factory.ogv"
-      type: video/ogg
-  logos:
-    textline: Built for static site generators
-    sources:
-    - permalink: img/logos/hugo.svg
-      alt: Hugo
-    - permalink: img/logos/jekyll.svg
-      alt: Jekyll
+title: Enterprise
+publishdate: 2018-07-06 04:00:00 +0000
+expirydate: 2030-01-01 04:00:00 +0000
+date: 2017-12-31 00:00:00 -0400
+menu:
+  main:
+    weight: 3
 features:
 - headline: Your site, your workflow
   textline: |

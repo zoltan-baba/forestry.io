@@ -19,6 +19,9 @@ sections:
 - path: hugo/content/blog
   label: Blog
   create: all
+- path: hugo/content/enterprise
+  label: Enterprise
+  create: all
 upload_dir: hugo/static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
