@@ -1,0 +1,1 @@
+This guide was moved to: [https://discuss.bitrise.io/t/how-to-cache-gradle-dependencies/194](https://discuss.bitrise.io/t/how-to-cache-gradle-dependencies/194)
