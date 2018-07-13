@@ -10,7 +10,7 @@ images:
 - "/uploads/2018/01/OGimage-01-docs-3x.jpg"
 menu:
   docs:
-    parent: Quick Start
+    parent: Quick Start Guide
     weight: 2
 
 ---
