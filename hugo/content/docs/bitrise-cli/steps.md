@@ -2,7 +2,7 @@
 [menu.docs]
 name = "Steps"
 parent = "Bitrise CLI"
-weight = 2
+weight = 5
 
 +++
 ## What is a Step
